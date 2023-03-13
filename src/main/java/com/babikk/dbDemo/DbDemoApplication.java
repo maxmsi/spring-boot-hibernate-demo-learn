@@ -18,8 +18,16 @@ public class DbDemoApplication {
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return  runner ->{
 			//createStudent(studentDAO);
-			createMultipleStudents(studentDAO);
+			//createMultipleStudents(studentDAO);
+			readStudent(studentDAO);
 		};
+	}
+
+	private void readStudent(StudentDAO dao){
+
+		Student student = dao.findById(2);
+		System.out.println(student);
+
 	}
 
 	private void createMultipleStudents(StudentDAO studentDAO) {
