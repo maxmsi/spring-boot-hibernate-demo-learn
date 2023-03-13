@@ -17,8 +17,20 @@ public class DbDemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return  runner ->{
-			createStudent(studentDAO);
+			//createStudent(studentDAO);
+			createMultipleStudents(studentDAO);
 		};
+	}
+
+	private void createMultipleStudents(StudentDAO studentDAO) {
+		Student student=new Student("Max","Babik","kamilmaxbabik@gmail.com");
+		studentDAO.save(student);
+
+		Student student2=new Student("Max","Babicky","dssssds@gmail.com");
+		studentDAO.save(student2);
+
+		Student student3=new Student("Kamil","Babicky","dsad@gmail.com");
+		studentDAO.save(student3);
 	}
 
 	private void createStudent(StudentDAO studentDAO) {
