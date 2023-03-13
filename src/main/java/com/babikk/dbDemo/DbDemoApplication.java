@@ -28,7 +28,7 @@ public class DbDemoApplication {
 	}
 
 	private void readAllStudent(StudentDAO studentDAO) {
-		List<Student> students = studentDAO.findAll();
+		List<Student> students = studentDAO.findByLastName("Babik");
 		students.forEach(x-> System.out.println(x));
 	}
 
