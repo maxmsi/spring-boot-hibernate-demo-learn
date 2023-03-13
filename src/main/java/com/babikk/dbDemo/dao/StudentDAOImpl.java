@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class StudentDA0Impl implements StudentDAO{
+public class StudentDAOImpl implements StudentDAO{
 
     @Autowired
     private EntityManager entityManager;
