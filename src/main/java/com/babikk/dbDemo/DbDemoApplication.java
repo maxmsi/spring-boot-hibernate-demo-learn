@@ -19,10 +19,10 @@ public class DbDemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return  runner ->{
-			//createStudent(studentDAO);
-			//createMultipleStudents(studentDAO);
-			//readStudent(studentDAO);
-			//readAllStudent(studentDAO);
+			// createStudent(studentDAO);
+			// createMultipleStudents(studentDAO);
+			// readStudent(studentDAO);
+			// readAllStudent(studentDAO);
 
 		};
 	}
