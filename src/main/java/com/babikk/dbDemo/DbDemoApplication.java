@@ -22,7 +22,7 @@ public class DbDemoApplication {
 			//createStudent(studentDAO);
 			//createMultipleStudents(studentDAO);
 			//readStudent(studentDAO);
-			readAllStudent(studentDAO);
+			//readAllStudent(studentDAO);
 
 		};
 	}
